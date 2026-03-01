@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">Admin Dashboard</div>
+
+<div class="container">
+
+    <div class="card-container">
+
+        <div class="card admin-card">
+            <h3>Add Doctor</h3>
+            <p>Add new doctors to the system</p>
+            <a href="/add_doctor" class="btn book-btn">Open</a>
+        </div>
+
+        <div class="card admin-card">
+            <h3>View Doctors</h3>
+            <p>See all registered doctors</p>
+            <a href="/view_doctors" class="btn book-btn">Open</a>
+        </div>
+
+        <div class="card admin-card">
+            <h3>View Appointments</h3>
+            <p>Check all booked appointments</p>
+            <a href="/view_appointments" class="btn book-btn">Open</a>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <a href="/logout" class="btn logout">Logout</a>
+    </div>
+
+</div>
+
+</body>
+</html>
